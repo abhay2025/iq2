@@ -1,0 +1,337 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Fira+Mono&family=Nova+Mono&family=Nunito:wght@500&family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
+
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.1em;
+    }
+
+    .part2_headdiv h1 {
+        font-size: 2.3em !important;
+        padding: 0.4em;
+    }
+
+    .part2_headdiv {
+        /* width: 19%; */
+        margin: auto;
+        height: 7em;
+        align-items: center;
+        color: #000;
+        display: flex;
+        justify-content: center;
+    }
+
+    .part2_headdiv h1 {
+        box-shadow: 10px 10px 10px 10px rgb(255, 0, 55);
+        font-family: "Monoton", cursive;
+        padding: 0.5em;
+    }
+
+
+    h1 {
+        font-family: "Alumni Sans Inline One", cursive;
+        font-size: 4.5em;
+    }
+
+    .mainimg:hover {
+        filter: drop-shadow(5px 5px 5px #9f9f9f);
+    }
+
+    .a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+    .matim {
+        margin-top: 2em;
+        margin-left: 7em;
+    }
+
+    .sci {
+        margin-left: 19em;
+    }
+
+    .lmm {
+        margin-left: 12.6em !important;
+    }
+
+
+    @media only screen and (max-width: 760px) {
+        .part2_headdiv {
+            width: 63% !important;
+            height: 7em !important;
+            /* margin-top: -38px !important; */
+        }
+
+        /* .res {
+            margin-left: 4.5em !important;
+        } */
+
+        .large {
+            margin-left: 1.5em !important;
+        }
+
+
+        .sci {
+            margin-left: 0em;
+        }
+
+        .matim {
+            margin-top: 2em;
+            margin-left: 1em;
+        }
+
+
+    }
+
+    .calc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h-8 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .contain {
+        /* max-width: 1324px !important; */
+        display: flex;
+        align-items: center;
+    }
+
+    .learnblock .card {
+        height: 15.3em !important;
+        width: 19em;
+        padding: 0em 0.5em 0em 0.5em;
+        cursor: pointer;
+        position: relative;
+        border: 2px solid #c166af;
+
+    }
+
+    .learnblock .car-body {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .image {
+        width: 80%;
+        margin: 0 auto;
+        height: 80%;
+        /* margin-bottom: 70px; */
+        position: relative;
+        /* bottom: 9px; */
+    }
+
+    .cardmain:hover {
+        filter: drop-shadow(6px 6px 6px rgb(58, 57, 57));
+    }
+
+    .validation {
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 1em;
+    }
+
+
+    .validation .alert {
+        background-color: rgba(248, 38, 83, 0.89);
+        width: 50%;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .space {
+        max-width: 64em !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        .part2_headdiv h1 {
+            font-size: 1.4em !important;
+        }
+
+        .validation .alert {
+            width: 80%;
+        }
+
+        .learnblock .card {
+            margin: auto;
+            margin-top: 1.2em;
+        }
+
+        .learnblock .card-body {
+            padding: 0;
+            bottom: 8px;
+        }
+
+        .learnblock .btn {
+            margin: 4px !important;
+        }
+
+        .bodyacc {
+            display: flex;
+            width: 200px;
+        }
+
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .cross {
+        width: 16px;
+        cursor: pointer;
+        float: right;
+        margin-right: 1em;
+        margin-top: 6px;
+    }
+
+    .sol {
+        font-size: 2.2em;
+        display: flex;
+        color: red;
+        border: 2px solid;
+        border-radius: 24px;
+        box-shadow: 0px 7px #fe5353;
+        width: 50%;
+        font-family: "Nunito", sans-serif;
+        text-shadow: 1px 1px red;
+        margin-left: 2em;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        transition: all 500ms;
+        cursor: pointer;
+    }
+
+    /* .sol:hover {
+        width: 48%;
+        box-shadow: 0px 1px #fe5353;
+    } */
+
+    @media only screen and (max-width: 760px) {
+
+        .sol {
+            font-size: 1.8em;
+            color: red;
+            border: 2px solid;
+            border-radius: 24px;
+            box-shadow: 10px 10px #fe5353;
+            width: 11em;
+            margin-left: 0.3em;
+            font-family: "Nunito", sans-serif;
+            text-shadow: 1px 1px red;
+        }
+    }
+</style>
+
+<div class="validation d-none">
+    <div class="alert alert-danger" role="alert">
+        Comming Soon!
+        <img src="img/xmark-solid.svg" alt="" class="cross">
+    </div>
+</div>
+<!-- <div class="container mt-5 mb-4">
+    <div class="part2_headdiv">
+        <h1 class="text-align-center mb-5" style="font-weight: 900;color: black;position: relative;">Links
+        </h1>
+    </div>
+</div> -->
+
+<div class="container bg-light p-3 ">
+    <div class="part2_headdiv mt-5">
+        <h1 class="text-align-center mb-5">LINKS
+        </h1>
+    </div>
+
+    <a href="/class10thCalculator" style="text-decoration: none;">
+        <h2 class="text-center mb-5 mt-5 sol">
+            Class10th-Calculator</h2>
+    </a>
+    <a href="/class12thCalculator" style="text-decoration: none;">
+        <h2 class="text-center mb-5 mt-5 sol">Class12th-Calculator</h2>
+    </a>
+</div>
+<!-- Class 9 -->
+<div class="part2_headdiv mt-5">
+    <h1 class="text-align-center mb-5">Study Material
+    </h1>
+</div>
+</div>
+
+<div class="container contain bg-light learnblock mb-5" style="margin-top: 2em;">
+    <div class="row row-cols-1 row-cols-md-3 g-3 mb-3 m-auto allcard space">
+
+
+        <div class="col">
+
+            <div class="card h-100 cardmain" style=" background-image: linear-gradient(to top left ,#dbd6da,#fae4f9);">
+
+                <img src="img/2.png" class="card-img-top image" alt="..." height="160px;">
+                <h1 class="h-8 head">Class9 Material</h1>
+            </div>
+
+        </div>
+        </a>
+
+
+        <div class="col">
+            <div class="card h-100 cardmain" style=" background-image: linear-gradient(to top left ,#dbd6da,#fae4f9);">
+
+                <img src="img/i1.png" class="card-img-top image" alt="..." height="160px;">
+                <h1 class="h-8 head">Class 10 Material</h1>
+            </div>
+        </div>
+        <div class="col">
+
+
+            <div class="card h-100 cardmain" style=" background-image: linear-gradient(to top left ,#dbd6da,#fae4f9);">
+
+
+                <img src="img/i3.png" class="card-img-top image" alt="..." height="160px;">
+                <h1 class="h-8 head" style="font-family: 'Ubuntu', sans-serif;">Class 11 Material</h1>
+            </div>
+
+        </div>
+        <div class="col">
+
+
+            <div class="card h-100 cardmain" style=" background-image: linear-gradient(to top left ,#dbd6da,#fae4f9);">
+
+
+                <img src="img/i2.png" class="card-img-top image" alt="..." height="160px;">
+                <h1 class="h-8 head">Class 12 Material</h1>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<!-- JQUERY CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script>
+
+    $('.card').click(() => {
+        $('.validation').removeClass('d-none')
+    })
+    $('.cross').click(() => {
+        $('.validation').addClass('d-none')
+    })
+</script>

@@ -1,0 +1,522 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+    .nav-pills .active {
+        color: yellow !important;
+    }
+
+    .in {
+        display: none;
+    }
+
+    .out {
+        display: block;
+    }
+
+    .fadeout {
+        opacity: 1;
+        /* display: block; */
+        transition: 600ms;
+    }
+
+    .fadein {
+        opacity: 0 !important;
+        /* display: none; */
+        transition: 600ms;
+    }
+
+    #science,
+    #commerce {
+        opacity: 1;
+        width: 100%;
+    }
+
+    .custom-image {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .slick-next:before {
+        content: none;
+    }
+
+    .slick-next {
+        right: 0px !important;
+    }
+
+    .slick-dots {
+        width: 90%;
+    }
+
+
+
+    /* Extra small devices (phones, 320px and down) */
+    @media only screen and (max-width: 320px) {
+
+        .custom-image {
+            height: 94px;
+        }
+    }
+
+
+    /* Extra small devices (phones, 320px and up) */
+    @media only screen and (min-width: 321px) {
+
+        .custom-image {
+            height: 100px;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .custom-image {
+            height: 200px;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .custom-image {
+            height: 238px;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .custom-image {
+            height: 320px;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .custom-image {
+            height: 320px;
+        }
+    }
+
+    input[type="text"] {
+        width: 30% !important;
+    }
+
+    .social-icons {
+        position: fixed;
+        top: 33%;
+        right: 0px;
+        z-index: 99999;
+    }
+
+    .social-icons li {
+        width: 100px;
+        right: -50px;
+        position: relative;
+        transition: right 0.5s;
+    }
+
+    .social-icons li:hover {
+        right: 0px !important;
+    }
+
+    .nav-pills>li>a {
+        background-color: red !important;
+        color: white;
+        font-size: 20px;
+        margin-right: 5px !important;
+        left: 40px !important;
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        border-radius: 23px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .nav-pills>li>a:hover {
+        color: yellow !important;
+    }
+
+    .table-bordered>tbody>tr>td,
+    .table-bordered>tbody>tr>th,
+    .table-bordered>tfoot>tr>td,
+    .table-bordered>tfoot>tr>th,
+    .table-bordered>thead>tr>td,
+    .table-bordered>thead>tr>th {
+        border: 1px solid red;
+        font-size: 20px;
+    }
+
+    input[type="text"] {
+        width: 30% !important;
+    }
+
+    .blink {
+
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    /** For mobile devices **/
+    @media only screen and (max-width:760px) {
+        .custom-shape-divider-top-1630622741 svg {
+            width: calc(102% + 1.3px);
+            height: 218px;
+        }
+
+        .next,
+        .prev {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .item {
+            display: block !important;
+        }
+
+        iframe {
+            width: 100%;
+            height: 326px;
+        }
+
+        #part6 .carousel-cell {
+            margin-right: 7em !important;
+            width: 44%;
+            height: 340px;
+        }
+
+        #part3 .row {
+            width: 74%;
+        }
+
+        .time-img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        #part3 .content h2 {
+            font-size: 2.1rem;
+        }
+
+        .special {
+            height: 18em;
+        }
+
+        .custom-shape-divider-top-1630622741 svg {
+            width: calc(258% + 20.3px) !important;
+            height: 484px !important;
+        }
+
+        .geo-shapes img {
+            animation: geo 12s linear infinite;
+        }
+
+        @keyframes geo {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(300vh);
+                opacity: 1;
+            }
+        }
+
+        .carousel-control-prev {
+            display: none;
+        }
+
+        .pre:hover {
+            transform: translateX(15px);
+        }
+
+        .nex:hover {
+            transform: translateX(-15px);
+        }
+
+        .carousel-control-next {
+            display: none;
+        }
+
+        .carousel-indicators {
+            z-index: 1;
+        }
+
+    }
+</style>
+</head>
+
+<body>
+    <!-- Scroll to top -->
+    <div class="sidebar-social">
+        <button id="btnScrollToTop" onclick="topFunction() " style="display: none;">
+            <i class="fa fas fa-arrow-up"></i>
+        </button>
+        <a id="whatsapp-chat" href="https://api.whatsapp.com/send/?phone=917905529739&app_absent=0&lang=eng"
+            data-bs-target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <section id="calculate" style="margin-top:2em">
+        <div class="header">
+
+            <h2 class="text-danger">
+
+                <center>COMPUTE CLASS 10 <span class="subject">SCIENCE</span> PERCENTAGE</center>
+            </h2>
+            <h4>
+                <center>Note**-- : THIS CALCULATOR CALCULATES BEST 5 AND OVER-ALL PERCENTAGE OF CLASS 10</center>
+            </h4>
+
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills" role="tablist">
+                <li><a class="sci active">Science</a></li=>
+                <li><a class="comm">Commerce</a></li>
+
+            </ul>
+            </br>
+            <div class="tab-content">
+                <div id="science" class="fadeout">
+                    <div class="container">
+                        <table class="table table-bordered table-success border-danger">
+                            <thead>
+                                <tr>
+                                    <th>SUBJECTS</th>
+                                    <th>MARKS OUT OF 100</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>English</td>
+                                    <td><input id="Seng" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td><input id="Shin" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td><input id="Ssci" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Social Studies</td>
+                                    <td><input id="Ssst" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td><input id="Smat" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Computers/P.Ed.</td>
+                                    <td><input id="Scom" type="text">/100</td>
+                                </tr>
+                                <tr id="Sper">
+                                    <td>Best Of Five(%) : <input id="Sb5" disabled="disabled" type="text"></td>
+                                    <td>Over-All(%) : <input id="Soverall" disabled="disabled" type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                    <center><button type="button" class="btn btn-danger btn-lg" id="btnClick">Calculate</button>
+                    </center>
+                    <br />
+
+                </div>
+                <div id="commerce" class="fadein d-none">
+                    <div class="container">
+                        <table class="table table-bordered table-success border-danger">
+                            <thead>
+                                <tr>
+                                    <th>SUBJECTS</th>
+                                    <th>MARKS OUT OF 100</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>English</td>
+                                    <td><input id="Ceng" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Hindi</td>
+                                    <td><input id="Chin" type="text">/100</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Commerce</td>
+                                    <td><input id="Ccom" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Social Studies</td>
+                                    <td><input id="Csst" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Economics</td>
+                                    <td><input id="Ceco" type="text">/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Computers/P.Ed.</td>
+                                    <td><input id="Ccomp" type="text">/100</td>
+                                </tr>
+                                <tr id="Cper">
+                                    <td>Best Of Five(%) : <input id="Cb5" disabled="disabled" type="text"></td>
+                                    <td>Over-All(%) : <input id="Coverall" disabled="disabled" type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <center><button type="button" class="btn btn-danger" id="btncomm">Calculate</button></center>
+                    <br />
+                </div>
+            </div>
+        </div>
+
+        </br>
+        </br>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('.sci').click(() => {
+                $('span.subject').text('SCIENCE')
+                if (!($('.sci').hasClass('active'))) {
+
+                    console.log('science');
+                    $('.sci').addClass('active')
+                    $('.comm').removeClass('active')
+                    // $('#science').addClass('out')
+                    // $('#commerce').removeClass('out')
+                    // $('#commerce').addClass('in')
+                    $('#science').addClass('fadeout')
+                    $('#science').removeClass('fadein d-none')
+                    $('#commerce').removeClass('fadeout')
+                    $('#commerce').addClass('fadein d-none')
+                }
+
+            })
+            $('.comm').click(() => {
+                $('span.subject').text('COMMERCE')
+                if (!($('.comm').hasClass('active'))) {
+                    console.log('commerce')
+                    $('.comm').addClass('active')
+                    $('.sci').removeClass('active')
+                    $('#commerce').addClass('fadeout')
+                    $('#commerce').removeClass('fadein d-none')
+                    $('#science').removeClass('fadeout')
+                    $('#science').addClass('fadein d-none')
+
+
+                }
+
+            })
+        })
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $("#Sper").hide();
+            $("#Cper").hide();
+            $("input:enabled").focusout(function () {
+                var txt = $(this).val();
+                if (!(txt == "" || txt == null)) {
+                    if (!isNaN(txt)) {
+                        var str = $(this).parent().text();
+                        str = str.substr(1, str.length);
+                        if (parseFloat(txt) > parseFloat(str) || parseFloat(txt) < 0) {
+                            //alert(parseFloat(txt) + " " + parseFloat(str));
+                            alert("Please Enter correct numeric value");
+                            $(this).val('').focus();
+
+                        }
+
+                    }
+                    else {
+                        alert("Please Enter only nos.");
+                        $(this).val('').focus();
+                    }
+                }
+            });
+
+            $("#btnClick").click(function () {
+                $("#science input:enabled").each(function () {
+                    var x = $(this).val();
+                    if (x == "" || x == null) {
+                        chk = 1;
+                        alert("FILL ALL BOXES!!!");
+                        return false();
+                    }
+                });
+
+                var hundred = [];
+
+                hundred[0] = parseFloat($("#Shin").val());
+                hundred[1] = parseFloat($("#Ssci").val());
+                hundred[2] = parseFloat($("#Ssst").val());
+                hundred[3] = parseFloat($("#Smat").val());
+                hundred[4] = parseFloat($("#Scom").val());
+                hundred.sort(function (a, b) { return a - b });
+
+                $("#Sb5").val((((hundred[4] + hundred[3] + hundred[2] + hundred[1] + parseFloat($("#Seng").val())) / 500) * 100).toFixed(2));
+                $("#Soverall").val((((hundred[4] + hundred[3] + hundred[2] + hundred[1] + hundred[0] + parseFloat($("#Seng").val())) / 600) * 100).toFixed(2));
+                $("#Sper").show();
+
+            });
+
+            $("#btncomm").click(function () {
+                $("#commerce input:enabled").each(function () {
+                    var x = $(this).val();
+                    if (x == "" || x == null) {
+                        chk = 1;
+                        alert("FILL ALL BOXES!!!");
+                        return false();
+                    }
+                });
+
+                var hundred = [];
+
+                hundred[0] = parseFloat($("#Chin").val());
+                hundred[1] = parseFloat($("#Ccom").val());
+                hundred[2] = parseFloat($("#Csst").val());
+                hundred[3] = parseFloat($("#Ceco").val());
+                hundred[4] = parseFloat($("#Ccomp").val());
+                hundred.sort(function (a, b) { return a - b });
+
+                $("#Cb5").val((((hundred[4] + hundred[3] + hundred[2] + hundred[1] + parseFloat($("#Ceng").val())) / 500) * 100).toFixed(2));
+                $("#Coverall").val((((hundred[4] + hundred[3] + hundred[2] + hundred[1] + hundred[0] + parseFloat($("#Ceng").val())) / 600) * 100).toFixed(2));
+                $("#Cper").show();
+
+            });
+
+
+        });
+    </script>
+
+    <body>
+
+        </html>

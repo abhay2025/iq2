@@ -1,0 +1,344 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+    .back {
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+
+
+    .small {
+        display: none !important;
+    }
+
+
+
+
+
+
+
+    .has-line {
+        padding-left: 100px;
+        position: relative;
+        font-size: 27px;
+    }
+
+    .has-line::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-color: #333333;
+        width: 88px;
+        height: 2px;
+    }
+
+    .group {
+        margin-top: 30px;
+        position: relative;
+    }
+
+
+
+    .group a {
+        width: 149px;
+        height: 51px;
+        border: 1px solid #b10c72;
+        border-radius: 40px;
+        background-color: #b10c72;
+        color: #fff !important;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        top: 0px;
+        padding-left: 9px;
+        padding-top: 8px;
+        cursor: pointer;
+
+    }
+
+    .group a:hover {
+        filter: drop-shadow(10px 10px 10px black);
+    }
+
+    @media (max-width: 420px) {
+        .im {
+            margin-top: 6em !important;
+        }
+
+        .back {
+            background-image: none !important;
+            display: block !important;
+        }
+
+        .small {
+            display: block !important;
+        }
+
+
+        .group a {
+            height: 71px;
+            width: 160px;
+            margin-left: 4em;
+        }
+
+        .group a:hover {
+            filter: drop-shadow(10px 10px 10px black);
+        }
+
+        .has-line {
+            text-align: center;
+            padding: 0;
+            font-size: 2em;
+        }
+
+        .has-line::before {
+            display: none;
+        }
+
+        .linebig {
+            text-align: center;
+        }
+
+
+        .newsletter-area {
+            padding-top: 150px;
+            margin-bottom: 50px;
+        }
+    }
+
+    @media only screen and (min-width: 420px) and (max-width: 574px) {
+        .back {
+            background-image: none !important;
+            display: block !important;
+        }
+
+
+        .group a {
+            height: 50px;
+            width: 130px;
+
+        }
+
+        .has-line {
+            text-align: center;
+            padding: 0;
+        }
+
+        .has-line::before {
+            display: none;
+        }
+
+        .linebig {
+            text-align: center;
+        }
+
+        .newsletter-area {
+            padding-top: 150px;
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        .back {
+            background-image: none !important;
+            display: block !important;
+        }
+
+
+        .group a {
+            height: 50px;
+            width: 130px;
+            right: 0;
+        }
+
+        .has-line {
+            text-align: center;
+            padding: 0;
+        }
+
+        .has-line::before {
+            display: none;
+        }
+
+        .linebig {
+            text-align: center;
+        }
+
+        .newsletter-area {
+            padding-top: 150px;
+            margin-bottom: 50px;
+        }
+    }
+
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .back {
+            background-image: none !important;
+        }
+
+
+        .group a {
+            height: 55px;
+            right: 0;
+        }
+
+        .has-line {
+            text-align: center;
+            padding: 0;
+        }
+
+        .has-line::before {
+            display: none;
+        }
+
+        .linesmall {
+            font-size: 18px !important;
+        }
+
+        .linebig {
+            margin: 0 auto;
+            max-width: 540px !important;
+            text-align: center;
+            font-size: 60px !important;
+            line-height: 68px !important;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .group a {
+            /* right: 0 !important; */
+            height: 60px;
+        }
+
+    }
+
+    @media (min-width: 1201px) and (max-width: 1399px) {
+        /* .group a {
+            right: 0 !important;
+        } */
+
+    }
+
+    /* body {
+font-family: 'Poppins', sans-serif;
+} */
+
+    .linebig,
+    .linesmall {
+        color: #e7101b;
+    }
+
+    .linebig {
+        font-size: 69px;
+        line-height: 76px;
+        font-weight: 700;
+        max-width: 810px;
+    }
+
+    .linesmall {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    @media (max-width: 767px) {
+        .linebig {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .linesmall {
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .linebig {
+            font-size: 46px;
+            line-height: 44px;
+        }
+
+        .linesmall {
+            font-size: 20px;
+        }
+    }
+
+    /* * {
+margin: 0;
+padding: 0;
+outline: 0;
+-webkit-box-sizing: border-box;
+      box-sizing: border-box;
+} */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    img {
+        border: 0;
+        outline: 0;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    /* body {
+position: relative;
+} */
+    /*# sourceMappingURL=main.css.map */
+</style>
+</head>
+
+<body>
+
+    <section class="back bg-light" style="margin-top:-5em;">
+
+
+        <!-- News Letter Starts Here -->
+        <section class="newsletter-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5 class="has-line linesmall" style="font-size:27px;">Coming Soon</h5>
+                        <h1 class="linebig">Sorry for the inconvenience</h1>
+
+                        <div class="group">
+
+                            <a href="/" style="text-decoration: none;">Back to home</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 im">
+                        <embed src="img/under_construction.svg" alt="img" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter Ends Here -->
+
+        <!-- Only Mobile View Starts Here -->
+        <!-- <section class="xs-bg d-md-none d-lg-none small">
+        <img src="img/under_construction.svg" alt="img" class="img-fluid w-100">
+    </section> -->
+        <!-- Only Mobile View Ends Here -->
+    </section>
+
+</body>

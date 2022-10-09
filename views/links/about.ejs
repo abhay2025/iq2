@@ -1,0 +1,656 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Fira+Mono&family=Nova+Mono&family=Nunito:wght@500&family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+    .ss {
+        width: 48em;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.1em;
+    }
+
+    /* shapes */
+    #part3 {
+        margin-top: 0.3em;
+        text-align: center;
+        position: relative;
+    }
+
+
+    .part2_headdiv h1 {
+        font-size: 2em !important;
+        padding: 0.4em;
+    }
+
+    .part2_headdiv {
+        width: 33%;
+        margin: auto;
+        height: 5em;
+        display: flex;
+        align-items: center;
+        color: #000;
+    }
+
+    .part2_headdiv h1 {
+        box-shadow: 10px 10px 10px 10px rgb(255, 0, 55);
+        font-family: 'Monoton', cursive;
+        padding: 0.5em;
+    }
+
+
+    .special h3 {
+        /* color: rgb(248, 9, 9); */
+        /* font-family: "Kurale", serif; */
+        font-weight: 600;
+    }
+
+    .custom-shape-divider-top-1630622741 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(0deg);
+        z-index: -1;
+    }
+
+    .custom-shape-divider-top-1630622741 svg {
+        position: relative;
+        display: block;
+        /* width: calc(123% + 1.3px); */
+        width: 200%;
+        height: 550px;
+        animation: shape 14s ease-in-out infinite;
+    }
+
+    .special:hover .content {
+        bottom: 0;
+    }
+
+    .content {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        bottom: calc(100% + 0px);
+        background-image: linear-gradient(to top left, #b10c72, #f50411);
+        transition: 1.2s;
+        z-index: 1;
+        color: white;
+        display: grid;
+        place-content: center;
+        padding: 12px;
+        text-align: start;
+    }
+
+    .content li {
+        font-size: 18px;
+        font-family: "Kurale", serif;
+        font-weight: bold;
+    }
+
+    .content img {
+        width: 7.5em;
+        height: 7.5em;
+        margin: 1em 0;
+    }
+
+    .content img {
+        margin: 10px 0 10px;
+    }
+
+    /* .content {
+    padding: 0;
+    } */
+    /* .content li {
+    font-size: 14px;
+    } */
+
+    @keyframes shape {
+        0% {
+            left: 0;
+        }
+
+        50% {
+            left: -60%;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
+    .custom-shape-divider-top-1630622741 .shape-fill {
+        fill: #e31837;
+    }
+
+    .geo-shapes img {
+        width: 100px;
+        animation: geo 10s linear infinite;
+        position: relative;
+        z-index: -6;
+        top: -12em;
+    }
+
+    .geo-shapes {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @keyframes geo {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(140vh);
+            opacity: 1;
+        }
+    }
+
+    .geo-shapes img:nth-child(1) {
+        animation-delay: 1s;
+    }
+
+    .geo-shapes img:nth-child(2) {
+        animation-delay: 5s;
+    }
+
+    .geo-shapes img:nth-child(3) {
+        animation-delay: 6s;
+    }
+
+    .geo-shapes img:nth-child(4) {
+        animation-delay: 10s;
+    }
+
+    .geo-shapes img:nth-child(5) {
+        animation-delay: 12s;
+    }
+
+    .geo-shapes img:nth-child(6) {
+        animation-delay: 14s;
+    }
+
+    .special {
+        /* width: 30%; */
+        height: 19em;
+        box-shadow: -1px -1px 10px 0px #000;
+        transition: all 2s linear;
+        background-color: white;
+        margin: 3em;
+        cursor: pointer;
+        border: 3px solid #e31837;
+        position: relative;
+        overflow: hidden;
+    }
+
+    @media screen and (max-width: 768px) {
+        #features {
+            padding: 0 !important;
+        }
+
+        #features .container {
+            max-width: 22em !important;
+            width: 22em;
+            padding: 0 !important;
+        }
+
+        .whatwe {
+            font-size: 1em;
+        }
+
+        .part2_headdiv h1 {
+            font-size: 1.6em !important;
+        }
+
+        .icon-img {
+            margin-left: 16px;
+        }
+
+        .big {
+            display: none !important;
+        }
+
+        .small {
+            display: block !important;
+            margin-top: 3em;
+        }
+
+        .part2_headdiv {
+            width: 71% !important;
+            height: 7em !important;
+            /* margin-top: -38px !important; */
+        }
+
+        #part3 .row {
+            margin-left: 13px;
+        }
+
+
+        .user {
+            width: 539px;
+            border-radius: 0 !important;
+            margin-top: 0px;
+        }
+
+        .user p {
+            margin: 60px 20px 30px !important;
+        }
+
+        /* .space {
+    margin: 0 246px !important;
+    } */
+        .space2 {
+            margin: 0 327px !important;
+        }
+
+        .space {
+            margin: 0 19px !important;
+        }
+
+        #base h1 {
+            bottom: 8px;
+        }
+
+        .view-box {
+            top: 43%;
+        }
+
+        .fea-div2 {
+            display: none !important;
+        }
+
+        .fea-div11 {
+            padding-bottom: 2em;
+            z-index: 999;
+            align-items: center;
+            width: 18em !important;
+        }
+
+        .fea-para {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #e31837;
+            font-weight: 500;
+            /* padding-left: 31px; */
+            width: 100% !important;
+            font-size: 1em !important;
+        }
+
+        .fea-divh {
+            font-family: "Ubuntu", sans-serif !important;
+            font-size: 1.2em !important;
+        }
+
+        .fea-div1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            margin-left: 13px;
+        }
+
+        .special {
+            width: 93% !important;
+            margin-top: 4em !important;
+            margin: 0;
+        }
+
+        .geo-shapes {
+            width: 40% !important;
+        }
+
+        .car {
+            margin-right: 0;
+            display: flex;
+            justify-content: center !important;
+        }
+    }
+
+    #about-sec {
+        background-image: url('img/pexels-pixabay-301920.jpg');
+        background-size: cover;
+        height: 12em;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255 3 3 / 61%);
+        background-blend-mode: multiply;
+        align-items: center;
+    }
+
+    .text-cut-out {
+        padding: 12px;
+        background-color: white;
+        mix-blend-mode: screen;
+        width: 6em;
+        font-size: 4em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* part3 */
+    #features {
+        padding: 4em 1em;
+        position: relative;
+        z-index: 1;
+        /* background-color: #f7f7f7; */
+        padding: 3em;
+    }
+
+    #features .fea-div {
+        position: relative;
+        z-index: 999 !important;
+    }
+
+    .fea-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 3em;
+    }
+
+    .fea-div1 {
+        width: 100%;
+        /* position: relative;
+        left: 62px; */
+    }
+
+    .fea-div11 {
+        padding-bottom: 2em;
+        z-index: 999;
+    }
+
+    .fea-img {
+        width: 33em;
+        height: 21em;
+        border-radius: 30px;
+    }
+
+    .fea-divh {
+        font-family: "Ubuntu", sans-serif !important;
+        font-size: 1.5em;
+        color: black;
+        font-weight: 500;
+    }
+
+    .fea-div .fas {
+        float: left;
+        margin-left: -52px;
+        padding: 13px;
+        font-size: 35px;
+        color: #e31837;
+        border-radius: 50%;
+        border: 2px solid;
+    }
+
+    .fea-para {
+        font-family: "Ubuntu", sans-serif !important;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: #e31837;
+        font-weight: 700;
+        /* padding-left: 31px; */
+        width: 34em;
+    }
+
+    .time-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #part3 .content h2 {
+        font-size: 2.1rem;
+    }
+
+    .custom-shape-divider-top-1630622741 svg {
+        width: calc(258% + 20.3px) !important;
+        height: 484px !important;
+    }
+
+    .geo-shapes img {
+        animation: geo 12s linear infinite;
+    }
+
+    @keyframes geo {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(300vh);
+            opacity: 1;
+        }
+    }
+
+    .whatwe {
+        font-family: "Ubuntu", sans-serif !important;
+        text-align: justify;
+        font-size: 1.3em;
+    }
+
+    .advantages2 {
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+
+<div id="about" class="py-3 mb-3">
+    <div class="container  bg-light py-3" style="border-radius:10px ;">
+        <div class="part2_headdiv">
+            <h1 class="text-align-center">WHAT
+                WE
+                DO
+            </h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+
+                <p class="whatwe mt-5 mx-4 ">
+                    We, at IQ Classes, always keep ‘Student First’ and strive hard to continue to meet the needs of
+                    our
+                    students. Our emphasis on maintaining the highest standards of teaching, result-oriented test
+                    preparation, healthy competitive environment, and expert faculty has helped us garner the trust
+                    of
+                    hundred of students..</p>
+            </div>
+            <div class="col-md-6" style="display: flex;justify-content: center;">
+                <img src="img/download_1.jpg" alt="" class="img-fluid d-none d-md-block about-img"
+                    style="width:33em;height:21em;border-radius:21px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section id="features">
+    <div class="part2_headdiv mb-5">
+        <h1 class="text-align-center">OUR SPECIALITY</h1>
+    </div>
+    <div class="container  bg-light" style="max-width: 1189px!important;padding:1px 61px;border-radius: 10px;">
+        <div class="fea-div mt-5">
+            <div class="fea-div1">
+                <div class="fea-div11">
+                    <div style="display:flex ;align-items: center;">
+                        <div class="icon-img"><i class="fas fa-book-reader"></i></div>
+                        <div class="icon-para" style="margin-left:1em">
+                            <h2 class="fea-divh">EXPERIENCED TEACHERS</h2>
+                            <p class="fea-para">We provide teachers specialized in various fields.They train students so
+                                that they may groom as responsible citizen in society</p>
+                        </div>
+                        <!-- <i class="fas fa-book-reader"></i>
+                    <h2 class="fea-divh">EXPERIENCED TEACHERS</h2>
+                    <p class="fea-para">We provide teachers specialized in various fields.They train students so
+                        that they may groom as responsible citizen in society</p> -->
+                    </div>
+                </div>
+                <div class="fea-div11">
+                    <div style="display:flex ;align-items: center;">
+                        <div class="icon-img"> <i class="fas fa-solid fa-book"></i></div>
+                        <div class="icon-para" style="margin-left:1em">
+                            <h2 class="fea-divh">EFFECTIVE LEARNING</h2>
+                            <p class="fea-para">We provide teachers specialized in various fields.They train students so
+                                that they may groom as responsible citizen in society</p>
+                        </div>
+                    </div>
+                    <!-- <h2 class="fea-divh">EFFECTIVE LEARNING</h2>
+                    <i class="fas fa-apple-alt"></i>
+                    <p class="fea-para">We provide teachers specialized in various fields.They train students so
+                        that they may groom as responsible citizen in society</p> -->
+                </div>
+                <div class="fea-div11">
+                    <div style="display:flex ;align-items: center;">
+                        <div class="icon-img"> <i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="icon-para" style="margin-left:1em">
+                            <h2 class="fea-divh">ASSIGNMENTS AND REVISION</h2>
+                            <p class="fea-para">We provide teachers specialized in various fields.They train students so
+                                that they may groom as responsible citizen in society</p>
+                        </div>
+                    </div>
+                    <!-- <h2 class="fea-divh">ASSIGNMENTS AND REVISION</h2>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p class="fea-para">We provide teachers specialized in various fields.They train students so
+                        that they may groom as responsible citizen in society</p> -->
+                </div>
+            </div>
+            <div class="fea-div2">
+                <img src="img/depositphotos_10732962-Happy-teacher.jpg" alt="" class="fea-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPECIALITY -->
+<section id="part3">
+    <div class="custom-shape-divider-top-1630622741">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="geo-shapes">
+        <img src="img/triangle-xxl.png" alt="">
+        <img src="img/imgbin_red-circle-font-png.png" alt="">
+        <img src="img/triangle-xxl.png" alt="">
+        <img src="img/imgbin_red-circle-font-png.png" alt="">
+        <img src="img/triangle-xxl.png" alt="">
+        <img src="img/imgbin_red-circle-font-png.png" alt="">
+    </div>
+
+    <div class="part2_headdiv">
+        <h1 class="text-align-center mb-5">Reasons to Choose
+            Us
+        </h1>
+    </div>
+
+    <div class="row car" style="justify-content:space-between;">
+
+        <div class="col-lg-3 special"
+            style="background-image: url('img/fac.png');background-size:contain;background-repeat: no-repeat;">
+            <h3 style="margin-top: 227px;">Highly Qualified & Experienced Faculty</h3>
+            <div class="content">
+                <img src="img/55.png" style="margin:auto;" alt="">
+                <ul>
+                    <li>Highly skilled and experrienced teachers work with us</li>
+                    <li>They are specialised in their respective fields</li>
+                    <li>They very well know how to shape your child's future</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-3 special"
+            style="background-image: url('img/online.png');background-size:contain;background-repeat: no-repeat;">
+            <h3 style="margin-top: 227px;">Online Test Portal for Students</h3>
+            <div class="content">
+                <img src="img/56.png" style="margin:auto;" alt="">
+                <ul>
+                    <li>Frequent Test are taken on panel</li>
+                    <li>Assignments are given on panel</li>
+                    <li>Different levels of tests are given</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-3 special"
+            style="background-image: url('img/on-learn.png');background-repeat: no-repeat; background-size:contain;">
+            <h3 style="margin-top: 227px;"> Online / Offline Classes</h3>
+            <div class="content">
+                <img src="img/59.png" style="margin:auto;" alt="">
+                <ul>
+                    <li>Best Interface for students to understand easily</li>
+                    <li>Small Online batches</li>
+                    <li>Personel attention to students</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-3 special"
+            style="background-image: url('img/personality (2).png');background-size:contain;background-repeat: no-repeat;">
+            <h3 style="margin-top: 227px;">Free Career Counselling Sessions</h3>
+            <div class="content">
+                <img src="img/60.png" style="margin:auto;" alt="">
+                <ul>
+                    <li>Trained Career Counsellers helps to guide student's career path</li>
+                    <li>Personality Development Sessions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-3 special"
+            style="background-image: url('img/comp.png');background-size:contain;background-repeat: no-repeat;">
+            <h3 style="margin-top: 227px;">Well Established Computer Labs</h3>
+            <div class="content">
+                <img src="img/58.png" style="margin:auto;" alt="">
+                <ul>
+                    <li>Computer classes on JAVA/PYTHON were conducted</li>
+                    <li>Practical Classes are also conducted </li>
+                    <li>Development and Designing Classes are conducted</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-3 special"
+            style="background-image: url('img/meeting.png');background-size:contain;background-repeat: no-repeat;">
+            <h3 style="margin-top: 227px;">Parent-Teacher Meeting</h3>
+            <div class="content">
+                <img src="img/57.png" style="margin:auto;" alt="">
+                <ul>
+                    <li>Regular Reports are given to parents</li>
+                    <li>Monthly Meetings are conducted </li>
+                    <li>Monthly score cards are generated</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
